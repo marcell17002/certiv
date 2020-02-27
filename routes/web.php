@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/certification', function () {
     return view('certification');
 });
+Route::get('/certification-pick', function () {
+    return view('certification-pick');
+});

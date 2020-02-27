@@ -13,17 +13,31 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" />
     </head>
     <body>
-        <div class="topnav">
+        <div class="topnav" id="topnav">
             <img class="logo" src={{asset('image/logo.png')}}>
             <div class="topnav-right">
-                <a href="/certification">Certification</a>
-                <a href="#about">Network</a>
-                <a href="#about">Article</a>
-                <a href="#about">Notifiation</a>
-                <a href="#about">Login</a>
+                <a href="/certification" href="javascript:void(0)">Certification</a>
+                <a href="#about" href="javascript:void(0)">Network</a>
+                <a href="#about" href="javascript:void(0)">Article</a>
+                <a href="#about" href="javascript:void(0)">Notifiation</a>
+                <a href="#about" href="javascript:void(0)">Login</a>
             </div>
             </div>
         </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("topnav");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+        </script>
         <div class="home-1">
             <div class="container">
                 <div class="row">
