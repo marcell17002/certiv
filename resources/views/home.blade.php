@@ -14,9 +14,9 @@
     </head>
     <body>
         <div class="topnav">
-            <!-- <img class="logo" src={{asset('image/logo.png')}}> -->
+            <img class="logo" src={{asset('image/logo.png')}}>
             <div class="topnav-right">
-                <a href="#search">Certification</a>
+                <a href="/certification">Certification</a>
                 <a href="#about">Network</a>
                 <a href="#about">Article</a>
                 <a href="#about">Notifiation</a>

@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/certification', function () {
+    return view('certification');
+});
