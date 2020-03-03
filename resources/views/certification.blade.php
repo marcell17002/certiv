@@ -61,6 +61,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100%;height:50%;padding: 10px 10px;">
+                        <div class="container1">
+                            <h4 style="text-align:center;border-top:2px;"><b>Jane Doe</b></h4> 
+                            <p style="text-align:center;">Interior Designer</p> 
+                            <button type="button" href="#" style="color : white; border-radius: 0px; background-color: #1b294a;width:100%; "> Apply </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100%;height:50%;padding: 10px 10px;">
+                        <div class="container1">
+                            <h4 style="text-align:center;border-top:2px;"><b>Jane Doe</b></h4> 
+                            <p style="text-align:center;">Interior Designer</p> 
+                            <button type="button" href="#" style="color : white; border-radius: 0px; background-color: #1b294a;width:100%; "> Apply </button>
+                        </div>
+                    </div>
+                </div>
          </div>
         </div>
         
