@@ -24,3 +24,12 @@ Route::get('/certification', function () {
 Route::get('/certification-pick', function () {
     return view('certification-pick');
 });
+Route::get('/connection', function () {
+    return view('connection');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/update-profile', function () {
+    return view('update-profile');
+});

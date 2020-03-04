@@ -17,7 +17,7 @@
             <!-- <img class="logo" src={{asset('image/logo.png')}}> -->
             <div class="topnav-right">
                 <a href="/certification">Certification</a>
-                <a href="#about">Network</a>
+                <a href="/connection">Network</a>
                 <a href="#about">Article</a>
                 <a href="#about">Notification</a>
                 <a href="/login">Login</a>
