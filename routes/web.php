@@ -33,3 +33,9 @@ Route::get('/profile', function () {
 Route::get('/update-profile', function () {
     return view('update-profile');
 });
+Route::get('/article', function () {
+    return view('article');
+});
+Route::get('/article-pick', function () {
+    return view('article-pick');
+});

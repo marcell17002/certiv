@@ -15,31 +15,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/certification.css') }}" />
     </head>
     <body>
-        <div class="topnav">
-            <img class="logo" src={{asset('image/logo.png')}}>
-            <div class="topnav-right">
-                <a href="/certification">Certification</a>
-                <a href="#about">Network</a>
-                <a href="#about">Article</a>
-                <a href="#about">Notifiation</a>
-                <a href="#about">Login</a>
-            </div>
-            </div>
-        </div>
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("topnav");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-            }
-        </script>
+        @include('includes.header')
         <br>
         <h2 style="text-align: center;color : #1b294a;"><b>Find and Compare Your Skill With Others</b></h2>
         
@@ -57,7 +33,7 @@
                 <div class="img-left">
                 </div>
                     <img src={{asset('image/human.png')}} alt="Avatar" style="width:500px;height:450px;">
-                    <button type="button" class="btn btn-info" href="#" style=" background-color: #1b294a;margin-left:20%;">View My Profile</button>
+                    <a href="/profile"><button type="button" class="btn btn-info"  style=" background-color: #1b294a;margin-left:20%;">View My Profile</button></a>
                 </div>
                 <div class="col-8">
                     <div class="row">
@@ -71,7 +47,7 @@
                         </div>
                         <div class="col-2">
                         <br>
-                            <button type="button" class="btn btn-primary">Connect</button>
+                            <a href="/profile"><button type="button" class="btn btn-primary">Connect</button></a>
                         </div>
                         <br>
                     </div>
@@ -124,10 +100,6 @@
          </div>
         </div>
         <br>
-        
-        <div class="footer">
-            <h5 style="text-align: center;color: white;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
-            <h6 style="text-align: center;color: white;"> Made with love from Jatinangor,West Java, Indonesia</h6>
-        </div>
+        @include('includes/footer')
     </body>
 </html>

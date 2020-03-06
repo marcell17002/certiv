@@ -1,42 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #fafafa;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #1b294a;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
-  .logo{
-      width: 120px;
-      height: 60px;
-      margin-left: 100px;
-      margin-top: -10px;
-  }
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -68,19 +29,6 @@ body {
     width: auto;
     height: 100px;
   }
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
-  .active-cyan-4 input[type=text]:focus:not([readonly]) {
-    border: 1px solid #4dd0e1;
-    box-shadow: 0 0 0 1px #4dd0e1;
-  }
   .profile-top{
     padding-top: 5%;
     padding-bottom: 5%;
@@ -100,4 +48,24 @@ body {
     background-color: #e6e6e6;
     margin-left: 5%;
     margin-right: 5%;
+  }
+  .form-update{
+    background-color: #e8e8e8;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .card-1{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    background-color: #e8e8e8;
+  }
+  .card-2{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #e8e8e8;
+
   }

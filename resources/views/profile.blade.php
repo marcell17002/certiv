@@ -15,31 +15,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/profile.css') }}" />
     </head>
     <body>
-        <div class="topnav">
-            <img class="logo" src={{asset('image/logo.png')}}>
-            <div class="topnav-right">
-                <a href="/certification">Certification</a>
-                <a href="#about">Network</a>
-                <a href="#about">Article</a>
-                <a href="#about">Notifiation</a>
-                <a href="#about">Login</a>
-            </div>
-            </div>
-        </div>
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("topnav");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-            }
-        </script>
+        @include('includes.header')
         
         <div class="profile-top">
         <h5 style="color:#ffcc24; text-align: center;margin-left:900px;"> Your Newest Emblem</h5>
@@ -63,9 +39,9 @@
         <h2 style="text-align: center;color:#1b294a"><b>See My Resume and Compare with Your Skills</b></h2>
         <br>
 
-        <div class="profile-3">
+        <div class="profile-1">
         <div class="container">
-            <h3 style="color:#1b294a;"> Sertification </h3>
+            <h3 style="color:#1b294a;">Sertification </h3><br>
             <div class="row">
                 <div class="col-6">
                     <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
@@ -85,10 +61,23 @@
             </div>
         </div>
         </div>
-
+        
         <div class="profile-0" >
         <div class="container">
-            <h3 style="color:#1b294a;"> Education </h3>
+            <h3 style="color:#1b294a;"> Achievement </h3><br>
+            <div class="row">
+                <div class="col-6">
+                    <h5>Lomba Invention 2020</h5>
+                </div>
+                <div class="col-4">
+                    <p>2017-2021</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="profile-1" >
+        <div class="container">
+            <h3 style="color:#1b294a;"> Education </h3><br>
             <div class="row">
                 <div class="col-6">
                     <h5>Universitas Padjadjaran</h5>
@@ -100,9 +89,9 @@
         </div>
         </div>
         
-        <div class="profile-3" >
+        <div class="profile-0" >
         <div class="container">
-            <h3 style="color:#1b294a;"> Skills </h3>
+            <h3 style="color:#1b294a;"> Skills </h3><br>
             <div class="row">
                 <div class="col-6">
                     <h5>Coding</h5>
@@ -121,9 +110,9 @@
         </div>
         </div>
 
-        <div class="profile-4">
+        <div class="profile-1">
         <div class="container">
-            <h3 style="color:#1b294a;"> Organisations </h3>
+            <h3 style="color:#1b294a;"> Organisations </h3><br>
             <div class="row">
                 <div class="col-6">
                     <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
@@ -143,7 +132,7 @@
             </div>
         </div>
         </div>
-
+        <br>
         <div class="container">
             <div class="row">
                 <button type="button" class="btn btn-info" href="/update-profile" style="margin-left:85%;">Update My Skills</button>
@@ -152,9 +141,6 @@
         </div>
         
         
-        <div class="footer">
-            <h5 style="text-align: center;color: white;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
-            <h6 style="text-align: center;color: white;"> Made with love from Jatinangor,West Java, Indonesia</h6>
-        </div>
+       @include('includes/footer')
     </body>
 </html>

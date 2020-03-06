@@ -13,17 +13,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/certification-pick.css') }}" />
     </head>
     <body>
-        <div class="topnav">
-            <img class="logo" src={{asset('image/logo.png')}}>
-            <div class="topnav-right">
-                <a href="/certification">Certification</a>
-                <a href="#about">Network</a>
-                <a href="#about">Article</a>
-                <a href="#about">Notifiation</a>
-                <a href="#about">Login</a>
-            </div>
-            </div>
-        </div>
+        @include('includes.header')
         
        <div class="container">
             <div class="row">
@@ -43,9 +33,6 @@
             </div>
         </div>
 
-        <div class="footer">
-            <h5 style="text-align: center;color: white;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
-            <h6 style="text-align: center;color: white;"> Made with love from Jatinangor,West Java, Indonesia</h6>
-        </div>
+       @include('includes/footer')
     </body>
 </html>

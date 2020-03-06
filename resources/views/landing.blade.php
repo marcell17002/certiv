@@ -13,17 +13,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}" />
     </head>
     <body>
-        <div class="topnav">
-            <!-- <img class="logo" src={{asset('image/logo.png')}}> -->
-            <div class="topnav-right">
-                <a href="/certification">Certification</a>
-                <a href="/connection">Network</a>
-                <a href="#about">Article</a>
-                <a href="#about">Notification</a>
-                <a href="/login">Login</a>
-            </div>
-            </div>
-        </div>
+        @include('includes.header')
         <div class="home-1">
             <div class="container">
                 <div class="row">
@@ -168,9 +158,7 @@
                 </div>              
             </div>
         </div>
-        <div class="footer">
-            <h5 style="text-align: center;color: white;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
-            <h6 style="text-align: center;color: white;"> Made with love from Jatinangor,West Java, Indonesia</h6>
-        </div>
+        
+        @include('includes.footer')
     </body>
 </html>
