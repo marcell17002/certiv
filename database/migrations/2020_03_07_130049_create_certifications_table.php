@@ -18,6 +18,9 @@ class CreateCertificationsTable extends Migration
             $table->string('certif_name')->unique();
             $table->string('company');
             $table->string('desc');
+            $table->string('desc_detail');
+            $table->string('pic');      //link gambar
+            $table->string('url')->unique();      //link page
             $table->timestamps();
         });
     }

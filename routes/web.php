@@ -17,11 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/certification', 'CertificationController@index');
+Route::get('/certification','CertificationController@index');
+Route::get('/certification/{url}','CertificationController@show');
 
-Route::get('/certification-pick', function () {
-    return view('certification-pick');
-});
 Route::get('/connection', function () {
     return view('connection');
 });

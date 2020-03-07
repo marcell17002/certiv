@@ -19,8 +19,8 @@
             <div class="row">
                 <div class="col-4">
                     <image src={{asset('image/cisco.png')}} style="widht: 16%; height: 16%; margin-top:30%;margin-left:5%;">
-                    <h3 style="text-align:center;margin-top:20%;padding-right:5%"> Nama Lembaga </h3>
-                    <h5 style="text-align:center;padding-right:5%;"> Minimum Desc. </h5>
+                    <h3 style="text-align:center;margin-top:20%;padding-right:5%"> {{$details->company}} </h3>
+                    <h5 style="text-align:center;padding-right:5%;"> {{$details->desc}} </h5>
                     <br>
                     <button type="button" href="/certification-pick" style="color : white; border-radius: 10px; background-color: #1b294a;width:90%;margin-left:5%;"> Apply </button>
                     <button type="button" href="/certification-pick" style="color : white; border-radius: 10px; background-color: #00ff44;width:90%;margin-left:5%; margin-top:5%;"> Contact </button>
@@ -28,7 +28,7 @@
                 <div class="col-8">
                     <h1 style="color : #1b294a; padding-top:10%;"> Judul </h1>
                     <br>
-                    <p style="text-align:justify;"> Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.Eos cumque optio dolores excepturi rerum temporibus magni recusandae eveniet, totam omnis consectetur maxime quibusdam expedita dolorem dolor nobis dicta labore quaerat esse magnam unde, aperiam delectus! At maiores, itaque.</p>
+                    <p style="text-align:justify;">{{$details->desc_detail}}</p>
                 </div>
             </div>
         </div>

@@ -12,4 +12,10 @@ class CertificationController extends Controller
         $certifications = Certification::all();
         return view('certification', ['certifications' => $certifications]);
     }
+
+    public function show($url){
+        $certificationDetails = Certification::where('url', $url)->first(); //pakek first supaya bisa dipanggil tanpa foreach dan keluarnya cuman 1
+
+        return view('certification-pick' , ['details' => $certificationDetails]);
+    }
 }

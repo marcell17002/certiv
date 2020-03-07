@@ -33,7 +33,7 @@
                         <div class="container1">
                             <h4 style="text-align:center;border-top:2px;"><b>{{$certification->certif_name}}</b></h4> 
                             <p style="text-align:center;">{{$certification->desc}}</p> 
-                            <button type="button" href="/certification-pick" style="color : white; border-radius: 0px; background-color: #1b294a;width:100%; "> Apply </button>
+                            <a class="btn btn-primary" href="/certification/{{$certification->url}}" style="color : white; border-radius: 0px; background-color: #1b294a;width:100%; "> Apply </a>
                         </div>
                     </div>
                 </div>
