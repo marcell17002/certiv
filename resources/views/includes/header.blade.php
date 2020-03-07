@@ -7,13 +7,27 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/layout_header_footer.css') }}" />
 
 <div class="topnav">
-    <img class="logo" src={{asset('image/logo.png')}}>
+    <a href="/"><img class="logo" src={{asset('image/logo.png')}}></a>
     <div class="topnav-right">
         <a href="/certification">Certification</a>
         <a href="/connection">Network</a>
         <a href="/article">Article</a>
         <a href="/profile">Notification</a>
-        <a href="/login">Login</a>
+        @guest
+            <a class="nav-link" href="/login">{{ __('Login') }}</a>
+        @else
+            <!-- Logout Button -->
+            <a class="nav-link" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+            <!-- end logout button -->
+        @endguest
+
     </div>
     </div>
 </div>
