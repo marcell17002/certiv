@@ -20,6 +20,7 @@ class CreateUserDetailsTable extends Migration
             $table->string('workplace');
             $table->string('education');
             $table->string('organization');
+            $table->string('bio');
             $table->timestamps();
         });
     }

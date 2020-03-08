@@ -25,9 +25,9 @@
                         <img src={{asset('image/marcell.jpg')}} style="width: 150px;height:150px;border-radius: 100%; text-align : center;margin-left:40%;margin-top:5%;">
                     </div>
                     <div class="col-7" style="padding-left:10%;">
-                        <h3 style="color:white;"><b>Marcell Antonius</b></h3>
-                        <h6 style="color:white;">Enterprise Application Intern di PT.ANGKASA PURA I</h6>
-                        <p style="color:#f5f5f5;font-size:12px;">I am an experienced college student over one year experience in handling multi-case program or issue on many courses. My professional experiences stems from months of providing excellent work with any team, creative problem solving , An excellent oral presentation and building customer loyalty.I am very interested in linux, web-dev, data. Of course I am also interested in web development back end programs. </p>
+                        <h3 style="color:white;"><b>{{$user->name}}</b></h3>
+                        <h6 style="color:white;">{{$userDetails->workplace}}</h6>
+                        <p style="color:#f5f5f5;font-size:12px;">{{$userDetails->bio}}</p>
                     </div>
                     <div class="col-3">
                         <img src={{asset('image/emblem.png')}} style="width: 130px;height:130px;border-radius: 100%; text-align : center;margin-left:30%;margin-top:5%  ;">  
@@ -36,7 +36,7 @@
             </div>
         </div>
         <br>
-        <h2 style="text-align: center;color:#1b294a"><b>See My Resume and Compare with Your Skills</b></h2>
+        <h2 style="text-align: center;color:#1b294a"><b>My Resume</b></h2>
         <br>
 
         <div class="profile-1">

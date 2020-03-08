@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//certification route
 Route::get('/certification','CertificationController@index');
 Route::get('/certification/{url}','CertificationController@show');
 
@@ -26,9 +27,9 @@ Route::get('/certification-pick', function () {
 Route::get('/connection', function () {
     return view('connection');
 });
-Route::get('/{username}', function () {
-    return view('profile');
-});
+
+//profile route
+Route::get('/{username}', 'ProfileController@showProfileData');
 Route::get('/update-profile', function () {
     return view('update-profile');
 });
