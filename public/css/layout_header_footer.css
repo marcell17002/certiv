@@ -20,8 +20,7 @@ body {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    color:#eda41c;
   }
   
   .topnav a.active {
@@ -29,19 +28,15 @@ body {
     color: white;
   }
   
-  .topnav-right {
-    float: right;
-  }
   .logo{
-      width: 120px;
-      height: 60px;
-      margin-left: 100px;
-      margin-top: -10px;
+      width: 100px;
+      height: 50px;
+      margin-top: -10px; 
+      margin-right: 530px;
   }
-  
   .footer{
       padding: 25px;
-    background-color: #c1cade;
+    background-color: #d9d9d9;
     width: auto;
     height: 100px;
   }

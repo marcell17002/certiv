@@ -22,7 +22,7 @@
                             <h1 style="color : #1b294a;"> Find The Best Certification! </h1>
                             <h2 style="color : #2d4170;"> Boost-Up your carreer !</h2>
                             <br>
-                            <button type="button" href="#" style="color : white; border-radius: 10px; background-color: #1b294a; "> Getting Started </button>
+                            <button type="button" class="btn btn-primary" href="#" style="color : white; border-radius: 10px; background-color: #1b294a; "> Getting Started </button>
                         </div>
                     </div>
                     <div class="col-5">
@@ -142,23 +142,82 @@
         <div class="home-6">
             <div class="container">
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-6">
                         <div class="content-home-2-txt" > 
                             <h1 style="color : #1b294a;"> Tertarik ?  </h1>
                             <br>
-                            <h4 > Bergabunglah bersama kami dan tatalah masa depanmu dengan bakat dan skill terbaikmu.</h4>
+                            <h5> Bergabunglah bersama kami dan tatalah masa depanmu dengan bakat dan skill terbaikmu.</h5>
                             <br>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-6">
                         <div class="content-home-img">
-                            <img src={{asset('image/illustration.png')}} style="width: 500px;height:400px; text-align : center;">
+                            <img src={{asset('image/illustration.png')}} style="width: 480px;height:350px; text-align : center;">
                         </div>
                     </div>
                 </div>              
             </div>
         </div>
         
+        <div class="home-7">
+            <h1 style="color : #1b294a;"> Want to be Our Partners ?  </h1>
+            <br>
+            <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Phone</label>
+                <input type="text" class="form-control" id="inputPhone" placeholder="+62 ..">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Organizations</label>
+                <input type="text" class="form-control" id="inputOrganizations" placeholder="Univ./Company/etc">
+            </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="inputAddress2">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+            </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Name of Certification or Skills</label>
+                <input type="text" class="form-control" id="inputType" placeholder="CIsco/Microtix/IELTS/TOEFL/etc ...">
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputAddress2">Price</label>
+                <input type="text" class="form-control" id="inputPrice" placeholder="Rp. XXXXXXX,-00">
+            </div>
+            </div>
+            <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputAddress">Description</label>
+                <textarea rows="4" cols="30" class="form-control" name="comment" form="usrform"> Your Description...</textarea>
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="float:right">Collaborate</button>
+            </form>
+        </div>
+        
+
         @include('includes.footer')
     </body>
 </html>

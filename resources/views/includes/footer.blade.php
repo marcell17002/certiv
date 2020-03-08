@@ -7,6 +7,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/layout_header_footer.css') }}" />
         
 <div class="footer">
-    <h5 style="text-align: center;color: white;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
-    <h6 style="text-align: center;color: white;"> Made with love from Jatinangor,West Java, Indonesia</h6>
+    <h5 style="text-align: center;color: #1b294a;"> Copyright ©2020 | Invention Udayana 2020 | Bucinangor </h5>
+    <h6 style="text-align: center;color: #1b294a;"> Made with love from Jatinangor,West Java, Indonesia</h6>
 </div>

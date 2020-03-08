@@ -28,22 +28,22 @@
                 <div class="carousel-item active">
                 <img class="d-block w-100" src="{{asset('image/certification.png')}}" alt="First slide" style="widht:100px;height:400px">
                 <div class="carousel-caption d-none d-md-block">
-                        <h4 style="color:grey"><b>See Common Resume</b></h4>
-                        <p style="color:grey">Improve your skills and compare with others</p>
+                        <h4 style="color:black"><b>See Common Resume</b></h4>
+                        <p style="color:black">Improve your skills and compare with others</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                 <img class="d-block w-100" src="{{asset('image/interview.jpg.jpg')}}" alt="Second slide"  style="height:400px;widht:100px;">
                 <div class="carousel-caption d-none d-md-block">
-                        <h4 style="color:grey"><b>Learn Company Background</b></h4>
-                        <p style="color:grey">It's so important before you take the interview</p>
+                        <h4 style="color:white"><b>Learn Company Background</b></h4>
+                        <p style="color:white">It's so important before you take the interview</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="{{asset('image/cv.svg')}}" alt="Third slide" style="widht:100px;height:400px">
                     <div class="carousel-caption d-none d-md-block">
-                        <h4 style="color:grey"><b>Make a Creative Resume</b></h4>
-                        <p style="color:grey">Sometimes HR loves a creative person through resume or cv</p>
+                        <h4 style="color:black"><b>Make a Creative Resume</b></h4>
+                        <p style="color:black">Sometimes HR loves a creative person through resume or cv</p>
                     </div>   
                 </div>
             </div>

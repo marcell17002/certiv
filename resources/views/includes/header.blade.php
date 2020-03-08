@@ -7,28 +7,48 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/layout_header_footer.css') }}" />
 
 <div class="topnav">
-    <a href="/"><img class="logo" src={{asset('image/logo.png')}}></a>
-    <div class="topnav-right">
-        <a href="/certification">Certification</a>
-        <a href="/connection">Network</a>
-        <a href="/article">Article</a>
-        <a href="/profile">Notification</a>
-        @guest
-            <a class="nav-link" href="/login">{{ __('Login') }}</a>
-        @else
-            <!-- Logout Button -->
-            <a class="nav-link" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-            </a>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-            <!-- end logout button -->
-        @endguest
-
+    <div class="container">
+        <div class="row">
+            <div class="col-4,5">
+                <a href="/"><img class="logo" src={{asset('image/logo.png')}}></a>
+            </div>
+                <div class="col-1,5">
+                    <a href="/certification">Certification</a>
+                </div>
+                <div class="col-1,5">
+                    <a href="/connection">Network</a>
+                </div>
+                <div class="col-1,5">
+                    <a href="/article">Article</a>
+                </div>
+                <div class="col-1,5">
+                    <a href="/profile">My Profile</a>
+                </div>
+                <div class="col-1,5">
+                    @guest
+                        <a class="nav-link" href="/login">{{ __('Login') }}</a>
+                    @else
+                        <!-- Logout Button -->
+                        <a class="nav-link" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                        <!-- end logout button -->
+                    @endguest
+                </div>
+        </div>
     </div>
+   
+   
+       
+        
+        
+        
+
     </div>
 </div>
 
