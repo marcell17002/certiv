@@ -26,7 +26,7 @@ Route::get('/certification-pick', function () {
 Route::get('/connection', function () {
     return view('connection');
 });
-Route::get('/profile', function () {
+Route::get('/{username}', function () {
     return view('profile');
 });
 Route::get('/update-profile', function () {
