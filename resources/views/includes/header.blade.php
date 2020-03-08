@@ -21,25 +21,27 @@
                 <div class="col-1,5">
                     <a href="/article">Article</a>
                 </div>
-                <div class="col-1,5">
-                    <a href="/profile">My Profile</a>
-                </div>
-                <div class="col-1,5">
                     @guest
-                        <a class="nav-link" href="/login">{{ __('Login') }}</a>
+                        <div class="col-1,5">
+                            <a class="nav-link" href="/login">{{ __('Login') }}</a>
+                        </div>
                     @else
+                        <div class="col-1,5">
+                            <a href="/profile">My Profile</a>
+                        </div>
+                        <div class="col-1,5">
                         <!-- Logout Button -->
                         <a class="nav-link" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                             {{ __('Logout') }}
                         </a>
+                        </div>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                         <!-- end logout button -->
                     @endguest
-                </div>
         </div>
     </div>
    
