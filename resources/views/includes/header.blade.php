@@ -27,7 +27,7 @@
                         </div>
                     @else
                         <div class="col-1,5">
-                            <a href="/{{ $username->username }}">My Profile</a>
+                            <a href="/profile/{{ $username->username }}">My Profile</a>
                         </div>
                         <div class="col-1,5">
                         <!-- Logout Button -->
