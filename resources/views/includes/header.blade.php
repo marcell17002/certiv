@@ -9,27 +9,29 @@
 <div class="topnav">
     <div class="container">
         <div class="row">
-            <div class="col-4,5">
+            <div class="col-7">
                 <a href="/"><img class="logo" src={{asset('image/logo.png')}}></a>
             </div>
-                <div class="col-1,5">
+            <div class="col-5">
+                <div class="row">
+                <div class="col-3">
                     <a href="/certification">Certification</a>
                 </div>
-                <div class="col-1,5">
+                <div class="col-2" style="margin-right:10px;">
                     <a href="/connection">Network</a>
                 </div>
-                <div class="col-1,5">
+                <div class="col-2"> 
                     <a href="/article">Article</a>
                 </div>
                     @guest
-                        <div class="col-1,5">
+                        <div class="col-2">
                             <a class="nav-link" href="/login">{{ __('Login') }}</a>
                         </div>
                     @else
-                        <div class="col-1,5">
-                            <a href="/{{ $username->username }}">My Profile</a>
+                        <div class="col-2">
+                            <a href="/{{ $username->username }}">Profile</a>
                         </div>
-                        <div class="col-1,5">
+                        <div class="col-2">
                         <!-- Logout Button -->
                         <a class="nav-link" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
@@ -42,6 +44,8 @@
                         </form>
                         <!-- end logout button -->
                     @endguest
+                </div>
+            </div>
         </div>
     </div>
    
