@@ -28,14 +28,16 @@ Route::get('/connection', function () {
     return view('connection');
 });
 
-//profile route
-Route::get('/{username}', 'ProfileController@showProfileData');
-Route::get('/update-profile', function () {
-    return view('update-profile');
-});
 Route::get('/article', function () {
     return view('article');
 });
+
+//profile route
+Route::get('/profile/{username}', 'ProfileController@showProfileData');
+Route::get('/update-profile', function () {
+    return view('update-profile');
+});
+
 Route::get('/article-pick', function () {
     return view('article-pick');
 });

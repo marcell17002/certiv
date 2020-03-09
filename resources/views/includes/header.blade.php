@@ -12,7 +12,7 @@
             <div class="col-7">
                 <a href="/"><img class="logo" src={{asset('image/logo.png')}}></a>
             </div>
-            <div class="col-5">
+            <div class="col" >
                 <div class="row">
                 <div class="col-3">
                     <a href="/certification">Certification</a>
@@ -29,7 +29,7 @@
                         </div>
                     @else
                         <div class="col-2">
-                            <a href="/{{ $username->username }}">Profile</a>
+                            <a href="/profile/{{ $username->username }}">Profile</a>
                         </div>
                         <div class="col-2">
                         <!-- Logout Button -->
@@ -48,13 +48,6 @@
             </div>
         </div>
     </div>
-   
-   
-       
-        
-        
-        
-
     </div>
 </div>
 
