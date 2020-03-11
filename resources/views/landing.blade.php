@@ -22,7 +22,7 @@
                             <h1 style="color : #1b294a;"> Find The Best Certification! </h1>
                             <h2 style="color : #2d4170;"> Boost-Up your carreer !</h2>
                             <br>
-                            <button type="button" class="btn btn-primary" href="#" style="color : white; border-radius: 10px; background-color: #1b294a; "> Getting Started </button>
+                            <a href="/certification"><button type="button" class="btn btn-primary"  style="color : white; border-radius: 10px; background-color: #1b294a; "> Getting Started </button></a>
                         </div>
                     </div>
                     <div class="col-5">
