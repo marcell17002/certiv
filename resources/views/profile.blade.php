@@ -72,7 +72,7 @@
             <h3 style="color:#1b294a;"> Education </h3><br>
             <div class="row">
                 <div class="col-6">
-                    <h5>Universitas Padjadjaran</h5>
+                    <h5>{{$userDetails->education}}</h5>
                 </div>
                 <div class="col-4">
                     <p>2017-2021</p>
@@ -110,18 +110,10 @@
                     <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
                 </div>
                 <div class="col-6">
-                    <h5>Cisco</h5>
+                    <h5>{{$userDetails->organization}}</h5>
                 </div>
             </div>
             <br>
-            <div class="row">
-                <div class="col-6">
-                    <img src={{asset('image/emblem.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
-                </div>
-                <div class="col-6">
-                    <h5>Cisco</h5>
-                </div>
-            </div>
         </div>
         </div>
         <br>
