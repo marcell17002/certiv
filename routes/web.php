@@ -24,6 +24,7 @@ Route::post('/register/details', 'RegisterDetailController@userDetails');
 //certification route
 Route::get('/certification','CertificationController@index');
 Route::get('/certification/{url}','CertificationController@show');
+Route::post('/certification/{url}','CertificationController@userGotCertif');
 
 Route::get('/certification-pick', function () {
     return view('certification-pick');

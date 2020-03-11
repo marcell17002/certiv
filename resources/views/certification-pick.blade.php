@@ -23,8 +23,12 @@
                     <h3 style="text-align:center;margin-top:20%;padding-right:5%"> {{$details->company}} </h3>
                     <h5 style="text-align:center;padding-right:5%;"> {{$details->desc}} </h5>
                     <br>
-                    <button class="btn btn-primary" type="button" href="/certification-pick" style="color : white; border-radius: 10px; background-color: #1b294a;width:90%;margin-left:5%;"> Apply </button>
-                    <button class="btn btn-success" type="button" href="/certification-pick" style="color : white; border-radius: 10px; background-color: #00ff44;width:90%;margin-left:5%; margin-top:5%;"> Contact via Whats App </button>
+                    <form action="" method="POST">
+                    @csrf
+                        <input type="hidden" value="{{$details->url}}" name="url">
+                        <button class="btn btn-primary" type="submit" style="color : white; border-radius: 10px; background-color: #1b294a;width:90%;margin-left:5%;"> Apply </button>
+                    </form>
+                    <button class="btn btn-success" type="button" style="color : white; border-radius: 10px; background-color: #00ff44;width:90%;margin-left:5%; margin-top:5%;"> Contact via Whats App </button>
                 </div>
                 <div class="col-8">
                     <h1 style="color : #1b294a; padding-top:10%;"> Judul </h1>
