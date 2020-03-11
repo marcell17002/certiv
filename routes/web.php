@@ -16,6 +16,10 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/register/details', function (){
+    return view('auth/registerDetail');
+})->middleware('auth');
+Route::post('/register/details', 'RegisterDetailController@userDetails');
 
 //certification route
 Route::get('/certification','CertificationController@index');
@@ -32,7 +36,7 @@ Route::get('/article', function () {
 
 //profile route
 Route::get('/profile/{username}', 'ProfileController@showProfileData');
-Route::get('/update-profile', function () {
+Route::get('/profile/edit', function () {
     return view('update-profile');
 });
 
