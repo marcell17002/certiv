@@ -28,7 +28,7 @@
                         <input type="hidden" value="{{$details->url}}" name="url">
                         <button class="btn btn-primary" type="submit" style="color : white; border-radius: 10px; background-color: #1b294a;width:90%;margin-left:5%;"> Apply </button>
                     </form>
-                    <button class="btn btn-success" type="button" style="color : white; border-radius: 10px; background-color: #00ff44;width:90%;margin-left:5%; margin-top:5%;"> Contact via Whats App </button>
+                    <a href="https://api.whatsapp.com/send?phone=62895401011469&text=Halo saya ingin mendaftar dalam sertifikasi ini!." class="float" target="_blank"><button class="btn btn-success" type="button" style="color : white; border-radius: 10px; background-color: #00ff44;width:90%;margin-left:5%; margin-top:5%;"> Contact via Whats App </button></a>
                 </div>
                 <div class="col-8">
                     <h1 style="color : #1b294a; padding-top:10%;"> Judul </h1>
