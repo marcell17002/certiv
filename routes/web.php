@@ -31,9 +31,8 @@ Route::get('/certification-pick', function () {
 });
 Route::get('/connection', 'ConnectionController@showPeople');
 
-Route::get('/article', function () {
-    return view('article');
-});
+Route::get('/article', 'ArticleController@index');
+Route::get('/article/{url}', 'ArticleController@showArticle');
 
 //profile route
 Route::get('/profile/{username}', 'ProfileController@showProfileData');
@@ -41,6 +40,3 @@ Route::get('/profile/edit', function () {
     return view('update-profile');
 });
 
-Route::get('/article-pick', function () {
-    return view('article-pick');
-});

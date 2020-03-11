@@ -63,19 +63,20 @@
         
         <div class="container">
         <div class="row">
+        @foreach($articles as $article)
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="{{asset('image/jobhunt.jpg')}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="/article-pick" class="btn btn-primary">See More</a>
+                    <h5 class="card-title">{{$article->header}}</h5>
+                    <p class="card-text">{{$article->shortDesc}}</p>
+                    <a href="/article/{{$article->url}}" class="btn btn-primary">See More</a>
                 </div>
                 </div>
             </div>
             </div>
         </div>
-
+        @endforeach
         </div>
         
         
