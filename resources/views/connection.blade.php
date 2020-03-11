@@ -36,13 +36,14 @@
                     <a href="/profile"><button type="button" class="btn btn-info"  style=" background-color: #1b294a;margin-left:20%;">View My Profile</button></a>
                 </div>
                 <div class="col-8">
+                @foreach($users as $user)
                     <div class="row">
                         <div class="col-3">
                             <img src={{asset('image/marcell.jpg')}} style="width: 110px;height:110px;border-radius: 100%; text-align : center;margin-top:10px;">
                         </div>
                         <div class="col-7">
-                            <h3><b>Antony Akbar </b></h3>
-                            <p style="color: #bababa"> Statistical Consultant at Jatinangor Research Center</p>
+                            <h3><b>{{$user->name}}</b></h3>
+                            <p style="color: #bababa"> Working at {{$user->workplace}}</p>
                             <p style="color: #bababa"> Get 10 Sertification</p>
                         </div>
                         <div class="col-2">
@@ -51,51 +52,7 @@
                         </div>
                         <br>
                     </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src={{asset('image/marcell.jpg')}} style="width: 110px;height:110px;border-radius: 100%; text-align : center;margin-top:10px;">
-                        </div>
-                        <div class="col-7">
-                            <h3><b>Antony Akbar </b></h3>
-                            <p style="color: #bababa"> Statistical Consultant at Jatinangor Research Center</p>
-                            <p style="color: #bababa"> Get 10 Sertification</p>
-                        </div>
-                        <div class="col-2">
-                        <br>
-                            <button type="button" class="btn btn-primary">Connect</button>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src={{asset('image/marcell.jpg')}} style="width: 110px;height:110px;border-radius: 100%; text-align : center;margin-top:10px;">
-                        </div>
-                        <div class="col-7">
-                            <h3><b>Antony Akbar </b></h3>
-                            <p style="color: #bababa"> Statistical Consultant at Jatinangor Research Center</p>
-                            <p style="color: #bababa"> Get 10 Sertification</p>
-                        </div>
-                        <div class="col-2">
-                        <br>
-                            <button type="button" class="btn btn-primary">Connect</button>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img src={{asset('image/marcell.jpg')}} style="width: 110px;height:110px;border-radius: 100%; text-align : center;margin-top:10px;">
-                        </div>
-                        <div class="col-7">
-                            <h3><b>Antony Akbar </b></h3>
-                            <p style="color: #bababa"> Statistical Consultant at Jatinangor Research Center</p>
-                            <p style="color: #bababa"> Get 10 Sertification</p>
-                        </div>
-                        <div class="col-2">
-                        <br>
-                            <button type="button" class="btn btn-primary">Connect</button>
-                        </div>
-                        <br>
-                    </div>
+                    @endforeach
                 </div>
          </div>
         </div>
