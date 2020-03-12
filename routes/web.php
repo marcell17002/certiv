@@ -49,3 +49,7 @@ Route::get('/9796' ,function(){
     return view('article-input');
 });
 Route::post('/9796', 'ArticleInputController@input');
+
+//delete
+Route::get('/9291', 'DeletionController@showArticle');
+Route::post('/9291/delete/{id}', 'DeletionController@deleteArticle');
