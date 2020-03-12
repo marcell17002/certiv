@@ -16,7 +16,9 @@ class ProfileController extends Controller
         $user = Auth::user();
         $userDetails = UserDetail::where('user_id', $user->id)->first();
         $certifUser = CertificationUser::where('user_id', $user->id)->first();
+        if($certifUser){
         $certif = Certification::where('certif_id', $certifUser->certif_id)->first();
+        
         return view('profile',
          [
             'userDetails' => $userDetails,
@@ -24,5 +26,15 @@ class ProfileController extends Controller
             'certifUser' => $certifUser,
             'certif' => $certif,
          ]);
+        }
+        else{
+            return view('profile',
+         [
+            'userDetails' => $userDetails,
+            'user' => $user,
+            'certifUser' => $certifUser,
+         ]);
+        }
+        
     }
 }

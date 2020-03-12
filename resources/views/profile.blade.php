@@ -43,12 +43,18 @@
         <div class="container">
             <h3 style="color:#1b294a;">Sertification </h3><br>
             <div class="row">
+                @isset($certif)
                 <div class="col-6">
                     <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
                 </div>
                 <div class="col-6">
                     <h5>{{$certif->certif_name}}</h5>
                 </div>
+                @else
+                <div class="col-6">
+                    <h5>None</h5>
+                </div>
+                @endisset                                    
             </div>
             <br>
         </div>
@@ -104,7 +110,7 @@
 
         <div class="profile-1">
         <div class="container">
-            <h3 style="color:#1b294a;"> Organisations </h3><br>
+            <h3 style="color:#1b294a;"> Organizations </h3><br>
             <div class="row">
                 <div class="col-6">
                     <img src={{asset('image/cisco.png')}} alt="Avatar" style="width:100px;height:100px;border-radius:100%">
