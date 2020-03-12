@@ -66,17 +66,17 @@
         @foreach($articles as $article)
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{asset('image/jobhunt.jpg')}}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{$article->header}}</h5>
-                    <p class="card-text">{{$article->shortDesc}}</p>
-                    <a href="/article/{{$article->url}}" class="btn btn-primary">See More</a>
-                </div>
+                    <img class="card-img-top" src="{{asset('image/jobhunt.jpg')}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$article->header}}</h5>
+                        <p class="card-text">{{$article->shortDesc}}</p>
+                        <a href="/article/{{$article->url}}" class="btn btn-primary">See More</a>
+                    </div>
                 </div>
             </div>
+        @endforeach
             </div>
         </div>
-        @endforeach
         </div>
         
         

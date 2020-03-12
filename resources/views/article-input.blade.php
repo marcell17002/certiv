@@ -8,28 +8,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Input Certification</title>
+    <title>Article Input</title>
   </head>
   <body>
   <div class="container">
-   <h1>Input Certification</h1>
+   <h1>Input Article</h1>
     <form action="" method="POST">
     @csrf
     <div class="form-group">
-        <label for="certif_name">Certification Name</label>
-        <input type="input" class="form-control" id="certif_name" placeholder="Enter Certification Name" name="certif_name">
+        <label for="header">Judul</label>
+        <input type="input" class="form-control" id="header" placeholder="Enter Judul" name="header">
     </div>
     <div class="form-group">
-        <label for="company">Company</label>
-        <input type="input" class="form-control" id="company" placeholder="Enter Company" name="company">
+        <label for="short_desc">Short Desc</label>
+        <input type="input" class="form-control" id="short_desc" placeholder="Enter Short Desc" name="short_desc">
     </div>
     <div class="form-group">
-        <label for="desc">Short Desc</label>
-        <input type="input" class="form-control" id="desc" placeholder="Enter Short Desc" name="desc">
-    </div>
-    <div class="form-group">
-        <label for="desc_detail">Description Detail</label>
-        <input type="input" class="form-control" id="desc_detail" placeholder="Enter Desc Detail" name="desc_detail">
+        <label for="isi">Isi</label>
+        <input type="input" class="form-control" id="isi" placeholder="Enter Isi" name="isi">
     </div>
     <div class="form-group">
         <label for="url">URL</label>

@@ -37,10 +37,15 @@ Route::get('/profile/edit', function () {
     return view('update-profile');
 });
 
-//admin route
-// Route::get('/9798','InputCertificationController');
+//admin route sementara
+//certification input
 Route::get('/9798',function(){
     return view('certif-input');
 });
-
 Route::post('/9798', 'CertifInputController@input');
+
+//article input
+Route::get('/9796' ,function(){
+    return view('article-input');
+});
+Route::post('/9796', 'ArticleInputController@input');
