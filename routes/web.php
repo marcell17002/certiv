@@ -26,9 +26,6 @@ Route::get('/certification','CertificationController@index');
 Route::get('/certification/{url}','CertificationController@show');
 Route::post('/certification/{url}','CertificationController@userGotCertif');
 
-Route::get('/certification-pick', function () {
-    return view('certification-pick');
-});
 Route::get('/connection', 'ConnectionController@showPeople');
 
 Route::get('/article', 'ArticleController@index');
@@ -40,3 +37,10 @@ Route::get('/profile/edit', function () {
     return view('update-profile');
 });
 
+//admin route
+// Route::get('/9798','InputCertificationController');
+Route::get('/9798',function(){
+    return view('certif-input');
+});
+
+Route::post('/9798', 'CertifInputController@input');
