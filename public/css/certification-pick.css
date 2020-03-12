@@ -1,11 +1,5 @@
 
-  .container{
-    margin-top: 2%;
-    background-color: #ffff;
-    padding-right: 30px;
-    margin-bottom: 30px;
-  }
-  .float{
+.float{
     position:fixed;
     width:60px;
     height:60px;
