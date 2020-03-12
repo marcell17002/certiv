@@ -53,3 +53,6 @@ Route::post('/9796', 'ArticleInputController@input');
 //delete
 Route::get('/9291', 'DeletionController@showArticle');
 Route::post('/9291/delete/{id}', 'DeletionController@deleteArticle');
+
+Route::get('/9290', 'DeletionController@showCertification');
+Route::post('/9290/delete/{certif_id}', 'DeletionController@deleteCertification');

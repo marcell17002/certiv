@@ -17,6 +17,7 @@
     <body>
     <div class="container">
         <h1>Delete Article</h1>
+        <a href="/"><h1>Back to landing</h1></a>
         <div class="row">
         @foreach($articles as $article)
             <div class="col-3">
